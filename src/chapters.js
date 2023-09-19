@@ -500,8 +500,7 @@ class Person {
   }
 
   greet() {
-    console.log("Hello, my name is ${this.name} and I am ${this age} years old.");
-  }
+   <p> console.log('Hello, my name is ${this.name} and I am ${this.age} years old.');}
 }
 
 // Instantiate a new Person object
@@ -627,13 +626,13 @@ console.log(sum); // Outputs 3
     <h2>Example:</h2>
     <pre><code>
 function greet(name) {
-  console.log(`Hello, ${name}!`);
+  console.log("Hello, ${this.name}!");
 
   sayGoodbye(name);
 }
 
 function sayGoodbye(name) {
-  console.log(`Goodbye, ${name}!`);
+  console.log('Goodbye, ${this.name}!');
 }
 
 greet('John Doe');
